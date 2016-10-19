@@ -11,5 +11,5 @@ Template.comments.events({
 
 
 Template.comments.helpers({
-
+ commentlist: function(){return Comments.find();}
 })
