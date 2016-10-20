@@ -22,6 +22,23 @@ Template.profile.events({
 	},
 	"submit #supporterForm": function(event) {
 		event.preventDefault();
+		console.log("hey we clicked it");
+		alert("Your response has been successfully recorded.")
+		const name =$("#supporterName").val();
+		const skills = $('#supporterGoals').val();
+	    const biography = $('#supporterBio').val();
+	    const email = $('#supporterEmail').val();
+	    const phonenumber = $('#supporterPhone').val();
+	    if($('#supporterAble').is(':checked')) {
+	    	var able = true;
+	    }
+	    else {
+	    	var able = false;
+	    }
+
+
+		const jsonobj = {name:name, skills:skills, biography:biography, email:email, phonenumber:phonenumber, able:able};
+		Supporters.insert(jsonobj);
 	}
 })
 
