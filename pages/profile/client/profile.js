@@ -25,7 +25,7 @@ Template.profile.events({
 		console.log("hey we clicked it");
 		alert("Your response has been successfully recorded.")
 		const name =$("#supporterName").val();
-		const skills = $('#supporterGoals').val();
+		const skills = $('#supporterSkills').val();
 	    const biography = $('#supporterBio').val();
 	    const email = $('#supporterEmail').val();
 	    const phonenumber = $('#supporterPhone').val();
