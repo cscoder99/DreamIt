@@ -10,22 +10,12 @@
 	</tr>
 </thead>
 <tbody>
-	<tr>
-		<td>Kira</td>
-		<td>dream</td>
-	</tr>
-	<tr>
-		<td>Saphira</td>
-		<td>dream</td>
-	</tr>
-	<tr>
-		<td>Kal</td>
-		<td>dream</td>
-	</tr>
-	<tr>
-		<td>Saphi</td>
-		<td>dream</td>
-	</tr>
+{{#each dreamer in dreamers}}
+<tr>
+	<td>{{dreamer.name}}</td>
+	<td>{{dreamer.goals}}</td>
+</tr>
+{{/each}}
 
 </tbody>
 </table>

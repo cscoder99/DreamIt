@@ -11,25 +11,16 @@
 	</tr>
 </thead>
 <tbody>
-	<tr>
-		<td>Chig</td>
-		<td>dream</td>
-	</tr>
-	<tr>
-		<td>Tenzin</td>
-		<td>dream</td>
-	</tr>
-	<tr>
-		<td>Lena</td>
-		<td>dream</td>
-	</tr>
-	<tr>
-		<td>Geraldine</td>
-		<td>dream</td>
-	</tr>
+	{{#each supporter in supporters}}
+<tr>
+	<td>{{supporter.name}}</td>
+	<td>{{supporter.skills}}</td>
+</tr>
+{{/each}}
 
 </tbody>
 </table>
-	</template>
+</template>
 
-	
+
+
