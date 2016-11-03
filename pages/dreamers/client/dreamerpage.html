@@ -1,9 +1,73 @@
 <template name="dreamerpage">
 
-Dreamer page
-<br>
-  NAME: {{name}}
-  <br>
-  {{biography}}
+<h1>Dreamer page</h1>
+
+<div class="row">
+
+	<div class="col-md-4">
+		<img src="http://www.lukedelalio.com/portfolio_images/158/sarah_4-2__medium.jpg" width="100%">
+	</div>
+
+	<div class="col-md-8">
+
+		<div class="row">
+			<div class="col-md-2">
+				<label><span class="glyphicon glyphicon-list-alt"></span> Name</label>
+			</div>
+			<div class="col-md-10">
+				{{name}}
+			</div>
+
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-2">
+				<label><span class="glyphicon glyphicon-globe"></span> Goals</label>
+			</div>
+			<div class="col-md-10">
+				{{goals}}
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-2">
+				<label for="dreamerBio"><span class="glyphicon glyphicon-user"></span> Biography</label>
+			</div>
+			<div class="col-md-10">
+				{{biography}}
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-2">
+				<label for="dreamerEmail"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+			</div>
+			<div class="col-md-10">
+				{{email}}
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-2">
+				<label for="dreamerPhone"><span class="glyphicon glyphicon-phone"></span> Phone Number</label>
+			</div>
+			<div class="col-md-10">
+				{{phonenumber}}
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-2">
+				<label><span class="glyphicon glyphicon-usd"></span> Financial compensation</label>
+			</div>
+			<div class="col-md-10">
+				{{compensation}}
+			</div>
+			
+		</div>
+
+	</div>
+
+</div>
 
 </template>
