@@ -1,17 +1,73 @@
 <template name="supporterpage">
 
-Supporter Profile
-<br>
-  NAME: {{name}}
-  <br>
- SKILLS: {{skills}}
-    <br>
-  BIOGRAPHY: {{biography}}
-    <br>
-  EMAIL:  {{email}}
-    <br>
- PHONE NUMBER:   {{phonenumber}}
-    <br>
-ABLE TO PROVIDE COMPENSATION:    {{able}}
+<h1>Supporter Profile</h1>
+
+<div class="row">
+
+	<div class="col-md-4">
+		<img src="https://images.savoysystems.co.uk/PXL/1123.jpg" width="100%">
+	</div>
+
+	<div class="col-md-8">
+
+		<div class="row">
+			<div class="col-md-2">
+				<label><span class="glyphicon glyphicon-list-alt"></span> Name</label>
+			</div>
+			<div class="col-md-10">
+				{{name}}
+			</div>
+
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-2">
+				<label><span class="glyphicon glyphicon-globe"></span> Skills</label>
+			</div>
+			<div class="col-md-10">
+				{{skills}}
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-2">
+				<label for="supporterBio"><span class="glyphicon glyphicon-user"></span> Biography</label>
+			</div>
+			<div class="col-md-10">
+				{{biography}}
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-2">
+				<label for="supporterEmail"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+			</div>
+			<div class="col-md-10">
+				{{email}}
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-2">
+				<label for="suppoterPhone"><span class="glyphicon glyphicon-phone"></span> Phone Number</label>
+			</div>
+			<div class="col-md-10">
+				{{phonenumber}}
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-2">
+				<label><span class="glyphicon glyphicon-usd"></span> Financial compensation</label>
+			</div>
+			<div class="col-md-10">
+				{{compensation}}
+			</div>
+			
+		</div>
+
+	</div>
+
+</div>
 
 </template>
