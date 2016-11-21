@@ -1,12 +1,9 @@
 Session.set("slideIndex",1);
 
-Template.home.rendered = function(){
-showSlides(1);
-
-
-
-
-};
+Template.home.rendered = 
+   function(){
+    showSlides(2);
+   };
 
 function showSlides(n) {
   var i;
