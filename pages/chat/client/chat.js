@@ -4,7 +4,8 @@ Template.chat.helpers({
     // sorted by when they were created (most recent, first)
     return Chats.find({},
                       {limit:5,
-                        sort: {createdAt: -1}})},
+                        sort: {createdAt: -1}})
+  },
 
 })
 

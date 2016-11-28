@@ -1,4 +1,42 @@
 <template name="userList">
+<div class="container">
+    <div class="row">
+        
+    </div>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a class="brand" href="#">
+            <img src="/images/logo.png" alt="Dream It" width="150px">
+            </a>
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Dropdown
+                            <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
   {{#if currentUser}}
   <button class="add-me-js">Add me</button>
   <button class="js-remove-all">Clear</button>
@@ -12,5 +50,6 @@
     </a></li>
     {{/each}}
   </ol>
+<img src="https://scontent.xx.fbcdn.net/v/t1.0-9/14344048_1147749248639251_3856792269291002206_n.jpg?oh=c3e0ee6029010a92a3bb0781eb35952a&oe=58B5B463" width=400px height="400px">
 
 </template>
