@@ -46,3 +46,6 @@ Template.profile.events({
 Template.profile.helpers({
 
 })
+document.getElementById("uploadBtn").onchange = function () {
+    document.getElementById("uploadFile").value = this.value;
+};
